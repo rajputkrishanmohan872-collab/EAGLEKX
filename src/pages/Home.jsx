@@ -1,35 +1,22 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 export default function Home() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "#020712",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <h1 style={{ fontSize: "60px" }}>🦅 EAGLEKX</h1>
+    <>
+      <Navbar />
 
-      <p style={{ color: "#38bdf8", fontSize: "22px" }}>
-        One App. Unlimited Entertainment.
-      </p>
+      <main className="home">
+        <h1>🦅 Welcome to EAGLEKX</h1>
 
-      <button
-        style={{
-          marginTop: "30px",
-          padding: "14px 30px",
-          background: "#38bdf8",
-          border: "none",
-          borderRadius: "12px",
-          fontWeight: "bold",
-          cursor: "pointer",
-        }}
-      >
-        Get Started
-      </button>
-    </main>
+        <p>
+          The Future of Entertainment, AI & Gaming
+        </p>
+
+        <button>EXPLORE</button>
+      </main>
+
+      <Footer />
+    </>
   );
 }
